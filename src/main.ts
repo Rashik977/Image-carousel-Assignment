@@ -24,7 +24,7 @@ contents.style.display = "flex";
 container.style.overflow = "hidden";
 contents.style.position = "absolute";
 
-let active = 0;
+let active: number = 0;
 
 const imagesLength = imgLists.length - 1;
 
@@ -38,7 +38,7 @@ let intervalImgs = setInterval(() => {
 
 function imageSlider() {
   contents.style.left = -imgLists[active].offsetLeft + "px";
-  let lastActive = document.querySelector("li.active");
+  let lastActive = document.querySelector("li.active") as HTMLLIElement;
 
   lastActive.classList.remove("active");
   listsOfLi[active].classList.add("active");
