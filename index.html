@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite + TS</title>
   </head>
@@ -50,14 +54,20 @@
           />
         </div>
       </div>
-      <button id="prev">previous</button>
-      <button id="next">next</button>
+      <div class="buttons">
+        <button id="prev" class="arrow-button">
+          <i class="fa fa-arrow-left" aria-hidden="true"></i>
+        </button>
+        <button id="next" class="arrow-button">
+          <i class="fa fa-arrow-right" aria-hidden="true"></i>
+        </button>
+      </div>
       <ul class="dots">
-        <li>1</li>
-        <li>2</li>
-        <li class="active">3</li>
-        <li>4</li>
-        <li>5</li>
+        <li><div class="circle"></div></li>
+        <li><div class="circle"></div></li>
+        <li class="active"><div class="circle"></div></li>
+        <li><div class="circle"></div></li>
+        <li><div class="circle"></div></li>
       </ul>
     </div>
     <script type="module" src="/src/main.ts"></script>

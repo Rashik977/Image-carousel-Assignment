@@ -1,4 +1,5 @@
-console.log("hello world");
+import "./style.css";
+
 const container = document.querySelector(".images") as HTMLDivElement;
 const contents = document.querySelector(
   ".container__contents"
@@ -68,6 +69,7 @@ prev.addEventListener("click", () => {
 listsOfLi.forEach((li, index) => {
   li.addEventListener("click", () => {
     active = index;
+
     imageSlider();
   });
 });

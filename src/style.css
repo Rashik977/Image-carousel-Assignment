@@ -63,25 +63,6 @@ h1 {
   color: #888;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
@@ -93,4 +74,63 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+.arrow-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: grey;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.arrow-button:hover {
+  background-color: #45a049;
+  transform: scale(1.1);
+}
+
+.arrow-button:active {
+  transform: scale(0.9);
+}
+
+.buttons {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 300px;
+  width: 500px;
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  list-style: none;
+}
+
+.circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: grey;
+}
+
+.circle.active {
+  background-color: #45a049;
+}
+
+.circle:hover {
+  transform: scale(1.5);
+}
+
+li.active div {
+  background-color: #45a049;
+}
+
+.container--item {
+  border-radius: 40px;
 }
