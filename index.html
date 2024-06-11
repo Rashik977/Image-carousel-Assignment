@@ -6,9 +6,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite + TS</title>
   </head>
-  <body>
-    <div id="app"></div>
-    <h1>Hello world</h1>
+  <body
+    style="
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    "
+  >
+    <div
+      id="app"
+      style="display: flex; flex-direction: column; align-items: center"
+    >
+      <div class="images" style="display: flex; flex-direction: column">
+        <div class="container__contents">
+          <img
+            src="https://picsum.photos/id/1/500/300"
+            alt=""
+            class="container--item"
+          />
+          <img
+            src="https://picsum.photos/id/18/500/300"
+            alt=""
+            class="container--item"
+          />
+          <img
+            src="https://picsum.photos/id/40/500/300"
+            alt=""
+            class="container--item"
+          />
+          <img
+            src="https://picsum.photos/id/45/500/300"
+            alt=""
+            class="container--item"
+          />
+          <img
+            src="https://picsum.photos/id/50/500/300"
+            alt=""
+            class="container--item"
+          />
+        </div>
+      </div>
+      <button id="prev">previous</button>
+      <button id="next">next</button>
+      <ul class="dots">
+        <li>1</li>
+        <li>2</li>
+        <li class="active">3</li>
+        <li>4</li>
+        <li>5</li>
+      </ul>
+    </div>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
