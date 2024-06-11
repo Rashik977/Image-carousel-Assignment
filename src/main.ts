@@ -16,8 +16,8 @@ const listsOfLi = document.querySelectorAll(
 
 contents.style.left = "0px";
 contents.style.transition = "left 0.5s";
-container.style.width = "500px";
-container.style.height = "300px";
+container.style.width = "640px";
+container.style.height = "320px";
 contents.style.width = "100%";
 contents.style.height = "100%";
 container.style.position = "relative";
